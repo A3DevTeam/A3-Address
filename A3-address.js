@@ -8,10 +8,10 @@
 
     let head = window.document.getElementsByTagName('head')[0] || window.document.documentElement;
     let loadlist = [
-        ["script", "https://code.jquery.com/jquery-3.6.3.js", function () { window.$A3 = jQuery.noConflict(); loadfile("script", "https://wallet.boons.kr/easyadd/JS/custom-jq-ui.js", function () { A3_inloadflag = true }) }],
-        ["script", "//unpkg.com/leaflet@1.8.0/dist/leaflet.js", function () { window.LA3 = L.noConflict(); loadfile("script", "https://wallet.boons.kr/easyadd/JS/leaflet-gesture-handling.js", function () { A3_leloadflag = true }) }],
+        ["script", "https://code.jquery.com/jquery-3.6.3.js", function () { window.$A3 = jQuery.noConflict(); loadfile("script", "https://cdn.jsdelivr.net/gh/A3DevTeam/A3-address@latest/customJS/custom-jq-ui.js", function () { A3_inloadflag = true }) }],
+        ["script", "//unpkg.com/leaflet@1.8.0/dist/leaflet.js", function () { window.LA3 = L.noConflict(); loadfile("script", "https://cdn.jsdelivr.net/gh/A3DevTeam/A3-address@latest/customJS/custom-leaflet-gesture-handleing.js", function () { A3_leloadflag = true }) }],
         ["link", "//unpkg.com/leaflet@1.8.0/dist/leaflet.css", function () { }],
-        ["link", "//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css", function () { }],
+        ["link", "https://cdn.jsdelivr.net/gh/A3DevTeam/A3-address@latest/CSS/index.css", function () { }],
         ["link", "https://wallet.boons.kr/easyadd/CSS/index.css", function () { }],
         ["link", "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0", function () { }],
         ["link", "https://unpkg.com/@raruto/leaflet-gesture-handling@latest/dist/leaflet-gesture-handling.min.css", function () { }],
