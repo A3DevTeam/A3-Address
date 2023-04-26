@@ -268,8 +268,7 @@
                 $A3(inputid).attr("spellcheck" , "off")
                 $A3(inputid).attr("autocapitalize" , "off")
                 $A3(inputid).attr("aria-autocomplete" , "both")
-                $A3(inputid).attr("inputmode" , "search")
-
+            
                 $A3(inputid).autocomplete({
                     source: function (request, response) {
                         $A3.ajax({
