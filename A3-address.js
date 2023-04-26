@@ -1,4 +1,3 @@
-//vesion 0.0.2
 !function () {
     load_A3ddress()
     let jusokey;
@@ -18,6 +17,8 @@
         ["link", "https://unpkg.com/@raruto/leaflet-gesture-handling@latest/dist/leaflet-gesture-handling.min.css", function () { }],
         ["request", "https://wallet.boons.kr/keycode", function (res) { keyload(res, 0) }],
     ]
+
+
     for (var i = 0; i < loadlist.length; i++) {
         loadfile(loadlist[i][0], loadlist[i][1], loadlist[i][2])
     }
@@ -124,6 +125,8 @@
         };
     }
 
+
+
     function load_A3ddress() {
         var a = function (inputid, option = {}) {
             ; 'use strict';
@@ -140,6 +143,7 @@
                 error: [],
                 keyloaded: [],
             }
+
             _utils.adreaid = inputid;
             _utils.option = option;
 
@@ -163,6 +167,7 @@
                     innerdata(data);
                 })
             }
+
             _utils.autoinnerform = function (option = {}, callback = function () { }) {
                 var inneroption = {};
                 if (option.wrapid) {
@@ -184,6 +189,8 @@
                 }
             }
             !function () {
+
+                
                 if (option.on) {
                     for (var key in option.on) {
                         if (key == "keyloaded") {
@@ -194,6 +201,7 @@
                         addevents(key, option.on[key])
                     }
                 }
+
                 if (option.autoinnerform) {
                     window.onload = function () {
                         var inneroption = {};
