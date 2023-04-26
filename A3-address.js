@@ -125,8 +125,6 @@
         };
     }
 
-
-
     function load_A3ddress() {
         var a = function (inputid, option = {}) {
             ; 'use strict';
