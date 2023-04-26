@@ -1,3 +1,4 @@
+//min
 !function () {
     load_A3ddress()
     let jusokey;
