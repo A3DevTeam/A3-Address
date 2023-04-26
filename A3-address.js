@@ -1,3 +1,4 @@
+//vesion 0.0.2
 !function () {
     load_A3ddress()
     let jusokey;
@@ -162,7 +163,6 @@
                     innerdata(data);
                 })
             }
-
             _utils.autoinnerform = function (option = {}, callback = function () { }) {
                 var inneroption = {};
                 if (option.wrapid) {
@@ -194,7 +194,6 @@
                         addevents(key, option.on[key])
                     }
                 }
-
                 if (option.autoinnerform) {
                     window.onload = function () {
                         var inneroption = {};
